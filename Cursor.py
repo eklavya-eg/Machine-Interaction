@@ -6,8 +6,8 @@ import math
 
 class Cursor:
     def start():
-        frame_width = 640
-        frame_height = 480
+        frame_width = 1920
+        frame_height = 1080
 
         cap = cv2.VideoCapture(0)
         mpHands = mp.solutions.hands
