@@ -7,6 +7,9 @@ import pyautogui
 import math
 
 
+def euclidean_distance(p1, p2):
+    return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
+
 class Cursor:
     def start():
         frame_width = 1920
@@ -65,7 +68,7 @@ class Cursor:
                     prev_thumb_pos = thumb
 
                     if thumb and index:
-                        distance = math.sqrt((thumb[0] - index[0])**2 + (thumb[1] - index[1])**2)
+                        distance = euclidean_distance(thumb, index)
                         if distance < click_threshold:
                             if not left_click_pressed:
                                 pyautogui.mouseDown(button='left')
@@ -76,7 +79,7 @@ class Cursor:
                                 left_click_pressed = False
 
                     if thumb and middle:
-                        distance = math.sqrt((thumb[0] - middle[0])**2 + (thumb[1] - middle[1])**2)
+                        distance = euclidean_distance(thumb, middle)
                         if distance < click_threshold:
                             if not right_click_pressed:
                                 pyautogui.mouseDown(button='right')
