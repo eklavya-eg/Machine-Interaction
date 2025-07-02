@@ -57,6 +57,6 @@ pip install -r requirements.txt
 
 ## Contributors
 
-- Rishabh Sajwan
 - Eklavya Gupta
 - Arsh Bansal 
+- Rishabh Sajwan
