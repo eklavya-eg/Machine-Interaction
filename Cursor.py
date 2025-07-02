@@ -1,3 +1,6 @@
+# Contributions: Please add your name and details here if you contribute to this file.
+# Example: # Contributor: Rishabh Sajwan
+
 import cv2
 import mediapipe as mp
 import pyautogui
@@ -10,6 +13,7 @@ class Cursor:
         frame_height = 1080
 
         cap = cv2.VideoCapture(0)
+        print("[INFO] Starting hand gesture mouse control...")
         mpHands = mp.solutions.hands
         hands = mpHands.Hands()
         mpDraw = mp.solutions.drawing_utils
