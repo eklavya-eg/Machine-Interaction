@@ -1,5 +1,5 @@
 # Contributions: Please add your name and details here if you contribute to this file.
-# Example: # Contributor: Rishabh Sajwan
+# Example: # Contributor: Eklavya Gupta Rishabh Sajwan
 # Trivial change to trigger a new commit with the correct email
 
 import cv2
